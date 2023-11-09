@@ -17,8 +17,11 @@
 .fa-bell{
     font-size: 20px;
 }
+.fa-bars{
+    font-size: 20px;
+}
 #top-nav{
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 25px 25px;
 }
 /* sidebar */
 #main{
