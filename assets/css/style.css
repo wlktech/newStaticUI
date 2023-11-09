@@ -140,3 +140,17 @@ marquee{
     background-color: rgba(98, 98, 98, 0.561);
     color: #fff;
 }
+
+.d-frame-box{
+    position: relative;
+}
+.d-frame-box:hover{
+    box-shadow: 2px 3px 4px rgb(208, 0, 255);
+}
+
+.frameBox{
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    width: 50px;
+}
