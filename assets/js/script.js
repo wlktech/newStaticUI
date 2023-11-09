@@ -6,3 +6,12 @@ window.addEventListener("load", function(){
     navbar.classList.add("fixed-top");
     footer.classList.add("fixed-bottom");
 })
+
+
+$(document).ready(function(){
+    $(".sidebarToggle").click(function(e){
+        e.preventDefault();
+        $("#sidebar").toggleClass('sidebar');
+        $("#sidebar").toggleClass('ease-left-in');
+    })
+})

@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- preloader section -->
     <div class="container-fluid">
-        <!-- preloader section -->
         <div class="row">
-            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 bg-purple">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 col-12 bg-purple">
                 <div id="preloader">
                     <div class="d-flex justify-content-end">
                         <div class="spinner-border text-white mt-3" role="status">
@@ -23,29 +23,103 @@
                 </div>
             </div>
         </div>
-        <!-- preloader section -->
     </div>
+    <!-- preloader section -->
+
+    <!-- main content -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 main-background" style="height: 100vh;">
+            <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 col-12 main-background" style="min-height: 100vh;" id="main">
                 <!-- navbar section -->
                 <div id="navbar">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 bg-purple py-4 shadow" id="top-nav">
-                            <div class="">
-                                <div class="d-flex justify-content-between px-2">
-                                    <div></div>
+                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 col-12 py-3 bg-purple" id="top-nav">
+                            <div class="d-flex justify-content-between px-3">
+                                <div>
+                                    <a href="" class="sidebarToggle">
+                                        <i class="fas fa-bars text-white"></i>
+                                    </a>
+                                </div>
                                     <h5 class="text-white">Delight 2D | 3D</h5>
                                     <i class="fas text-white fa-bell d-block mt-1"></i>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- navbar section -->
+                <!-- offcanvas start -->
+                <div class="sidebar" id="sidebar" style="padding-top: 70px;">
+                    <div class="container-fluid py-3 rounded-4 shadow">
+                        <!-- before login view -->
+                        <!-- <div class="d-flex justify-content-between">
+                            <i class="fa-regular fa-user-circle d-block text-purple"></i>
+                            <a href="" class="login-btn">
+                                အကောင့်ဝင်ပါ
+                            </a>
+                        </div> -->
+                        <!-- before login view -->
+                        <!-- after login view -->
+                        <div class="d-flex justify-content-between">
+                            <img src="./assets/img/profile.png" alt="">
+                            <div>
+                                <a href="" class="login-btn">
+                                    Stephen
+                                </a>
+                                <small class="text-purple">
+                                    <i class="fas fa-wallet"></i> : 100,000 MMK
+                                </small>
+                            </div>
+                        </div>
+                        <!-- after login -->
+                    </div>
+                    <!-- nav-links -->
+                    <div class="nav-links">
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-home d-block me-2"></i>
+                                <p class="py-0">ပင်မ</p>
+                            </div>
+                        </a>
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-wallet d-block me-2"></i>
+                                <p class="py-0">ပိုက်ဆံအိတ်</p>
+                            </div>
+                        </a>
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-gift d-block me-2"></i>
+                                <p class="py-0">ပရိုမိုးရှင်း</p>
+                            </div>
+                        </a>
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-home d-block me-2"></i>
+                                <p class="py-0">ဝန်ဆောင်မှုဖုန်း</p>
+                            </div>
+                        </a>
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-list d-block me-2"></i>
+                                <p class="py-0">ရွေးချယ်ရန်</p>
+                            </div>
+                        </a>
+                        <a href="" class="link shadow">
+                            <div class="d-flex">
+                                <i class="fas fa-right-from-bracket d-block me-2"></i>
+                                <p class="py-0">အကောင့်ထွက်ရန်</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- nav-links -->
+                </div>
+                <!-- offcanvas end -->
 
+                <!-- navbar section -->
+                
                 <!-- content -->
-                <div class="container-fluid py-5 my-5">
+                <div class="container-fluid py-5 mt-4">
+
+                    <!-- carousel -->
                     <div id="carouselExampleControls" class="carousel slide shadow" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -68,15 +142,17 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                    <!-- carousel -->
+
                 </div>
                 <!-- content -->
 
 
 
                 <!-- footer -->
-                <footer id="footer">
+                <!-- <footer id="footer">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 bg-purple py-3 footer-border">
+                        <div class="col-lg-4 col-md-4 offset-lg-4 offset-md-4 col-12 bg-purple py-3 footer-border">
                             <div class="d-flex justify-content-around footer">
                                 <a href="./index.html" class="text-decoration-none d-block footer-link active">
                                     <i class="fas fa-home"></i>
@@ -96,18 +172,19 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> -->
                 <!-- footer -->
             </div>
         </div>
     </div>
+    <!-- main content -->
 
 
 
     <!-- Preloader -->
     <div class="preloader">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     </div>
     <!-- Preloader -->
 
