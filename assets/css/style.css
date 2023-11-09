@@ -1,0 +1,62 @@
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.fa-bell{
+    font-size: 20px;
+}
+#top-nav{
+    border-radius: 0 0 15px 15px;
+}
+.footer-border{
+    border-radius: 15px 15px 0 0;
+}
+.footer-link{
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.active{
+    background-color: #fff;
+    color: #8b00dc;
+    box-shadow: 2px 3px 4px #000;
+}
+.footer-link:hover{
+    background-color: #fff;
+    color: #8b00dc;
+    box-shadow: 2px 3px 4px #000;
+    transform: scale(1.2);
+    transition-duration: 0.6s;
+}
+.footer-link i{
+    font-size: 20px;
+}
+
+.main-background{
+    background: linear-gradient(90deg, rgba(237,205,255,1) 0%, rgba(255,255,255,1) 50%, rgba(238,195,255,1) 100%);
+}
+#preloader{
+    background: url(../img/logo.png) no-repeat center center;
+    background-size: 200px;
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.preloader{
+    visibility: hidden;
+    display: none;
+}
+
+.bg-purple{
+    background: linear-gradient(90deg, rgba(166,0,255,1) 0%, rgba(110,3,162,1) 50%, rgba(157,2,218,1) 100%);
+}
+.carousel-inner{
+    position: relative;
+}
+marquee{
+    position: absolute;
+    bottom: 5px;
+    background-color: rgba(98, 98, 98, 0.561);
+    color: #fff;
+}
