@@ -138,7 +138,7 @@
                             <i class="fas fa-list d-block fa-2x mb-2"></i>
                             <p class="mb-0">မှတ်တမ်း</p>
                         </a>
-                        <a href="" class="text-center text-decoration-none text-white">
+                        <a href="./2d_winner_page.html" class="text-center text-decoration-none text-white">
                             <i class="fas fa-star d-block fa-2x mb-2"></i>
                             <p class="mb-0">ကံထူးရှင်များ</p>
                         </a>
@@ -155,7 +155,7 @@
                             <p>Updated: <span id="live_updated_time">10-0-2023 4:30:00PM</span></p>                             
                         </div>  
                         <div class="text-center">
-                            <button type="button" class="btn btn-purple text-white" data-toggle="modal" data-target="#playtwod">ထိုးမည်</a>
+                            <button type="button" class="btn btn-purple text-white" data-bs-toggle="modal" data-bs-target="#playtwod">ထိုးမည်</a>
                         </div>                       
                     </div>
                     <!-- winner result -->
@@ -242,7 +242,7 @@
                         data.result.forEach(r => {
                             newHTML += `
                                 <div class="digit-card mb-1 rounded-4 mb-2"> 
-                                  <p class="text-center">${r.open_time}</p>
+                                  <h5 class="text-center">${r.open_time}</h5>
                                   <div class="multi-text">                
                                     <div class="">
                                       <p>Set</p>
@@ -274,3 +274,26 @@
     </script>
 </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="playtwod">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"  id="exampleModalLongTitle">ထိုးမည့်အချိန် (section) ကိုရွေးပါ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="">
+          <a href="" class="btn btn-purple w-100" >12:00 AM</a>
+         </div>
+         <div class="">
+          <a href="" class="btn btn-purple w-100" >04:00 PM</a>
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-purple bg-purple text-white w-100">ထိုးမည်</button>
+        </div>
+      </div>
+    </div>
+  </div>
