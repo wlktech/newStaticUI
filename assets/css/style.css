@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 #preloader{
     background: url(../img/logo.png) no-repeat center center;
@@ -215,4 +216,8 @@ hr {
 }
 footer{
     position: relative;
+}
+.bankCheck{
+    border-bottom: 3px solid #fff;
+    /* transition-duration: .6s; */
 }
