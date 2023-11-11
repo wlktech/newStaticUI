@@ -29,11 +29,11 @@
     <!-- main content -->
     <div class="container-fluid" id="allBgColor">
         <div class="row">
-            <div class="col-lg-6 col-md-4 offset-lg-3 offset-md-4 col-12" style="min-height: 100vh;" id="main">
+            <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12" style="min-height: 100vh;" id="main">
                 <!-- navbar section -->
                 <div id="navbar">
                     <div class="row">
-                        <div class="col-lg-6 col-md-4 offset-lg-3 offset-md-4 col-12 py-3 nav-border-purple" id="top-nav">
+                        <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12 py-3 nav-border-purple" id="top-nav">
                             <div class="d-flex justify-content-between px-3">
                                 <!-- before login -->
                                 <!-- <a href="../index.html" class="text-decoration-none">
@@ -131,7 +131,7 @@
                 <!-- navbar section -->
                 
                 <!-- content -->
-                <div class="container-fluid py-5 mt-5">
+                <div class="container-fluid py-5 mt-5" id="content">
                     <!-- subnav -->
                     <div class="d-flex justify-content-around text-white bg-purple shadow rounded-4 py-4 mb-4">
                         <a href="" class="text-center text-decoration-none text-white">
@@ -149,18 +149,19 @@
                     </div>
                     <!-- subnav -->
                     <!-- winner result -->
-                    <div class="row">
+                    <div class="row my-4">
                         <div class="text-center text-white">
                             <h1 class="" style="font-size:90px;" id="live_2d">07</h1>
                             <p>Updated: <span id="live_updated_time">10-0-2023 4:30:00PM</span></p>                             
-                        </div>                         
+                        </div>  
+                        <div class="text-center">
+                            <button type="button" class="btn btn-purple text-white" data-toggle="modal" data-target="#playtwod">ထိုးမည်</a>
+                        </div>                       
                     </div>
                     <!-- winner result -->
                     <!-- 2d lists -->
                     <div class="container-fluid" style="margin-bottom:80px;" id="result"></div>
                     <!-- 2d lists -->
-
-
                 </div>
                 <!-- content -->
 
@@ -240,7 +241,7 @@
                         let newHTML = '';
                         data.result.forEach(r => {
                             newHTML += `
-                                <div class="card digit-card mb-1"> 
+                                <div class="digit-card mb-1 rounded-4 mb-2"> 
                                   <p class="text-center">${r.open_time}</p>
                                   <div class="multi-text">                
                                     <div class="">
