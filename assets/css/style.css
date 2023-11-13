@@ -214,10 +214,20 @@ hr {
     justify-content: space-around;
     /* align-items: center; */
 }
+.playTime a:hover{
+    border: 1px solid purple;
+    color: #000;
+}
+
+
 footer{
     position: relative;
 }
 .bankCheck{
+    border-bottom: 3px solid #fff;
+    /* transition-duration: .6s; */
+}
+.bankCheck:hover{
     border-bottom: 3px solid #fff;
     /* transition-duration: .6s; */
 }
