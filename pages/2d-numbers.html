@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delight 2D | 3D</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <!-- preloader section -->
+  <div class="container-fluid allBgColor">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12">
+        <div id="preloader">
+          <div class="d-flex justify-content-end">
+            <div class="spinner-border text-white mt-3" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- preloader section -->
+
+  <!-- main content -->
+  <div class="container-fluid" id="allBgColor">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3 col-12" style="min-height: 100vh;" id="main">
+        <!-- navbar section -->
+        <div id="navbar">
+          <div class="row">
+            <div class="col-lg-6 col-md-4 offset-lg-3 offset-md-4 col-12 py-3 nav-border-purple" id="top-nav">
+              <div class="d-flex justify-content-between px-3">
+                <!-- before login -->
+                <!-- <a href="../index.html" class="text-decoration-none">
+                                        <h5 class="text-white mt-2">Delight 2D | 3D</h5>
+                                    </a>
+                                    <div>
+                                        <button class="btn btn-sm btn-purple text-white me-2">
+                                            <i class="fas fa-unlock me-2"></i>
+                                            LOGIN
+                                        </button>
+                                    </div> -->
+                <!-- before login -->
+                <!-- after login -->
+                <a href="../index.html" class="text-decoration-none">
+                  <h5 class="text-white mt-2">Delight 2D | 3D</h5>
+                </a>
+                <div>
+                  <i class="fas text-white fa-bell me-1"></i>
+                  <btn class="btn sidebarToggle">
+                    <i class="fas fa-bars text-white"></i>
+                  </btn>
+                </div>
+                <!-- after login -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- offcanvas start -->
+        <div class="sidebar" id="sidebar" style="padding-top: 70px;">
+          <div class="container-fluid py-3 rounded-4">
+            <!-- before login view -->
+            <!-- <div class="d-flex justify-content-between">
+                            <i class="fa-regular fa-user-circle d-block text-purple"></i>
+                            <a href="" class="login-btn">
+                                အကောင့်ဝင်ပါ
+                            </a>
+                        </div> -->
+            <!-- before login view -->
+            <!-- after login view -->
+            <div class="d-flex justify-content-between">
+              <img src="./assets/img/profile.png" alt="">
+              <div>
+                <a href="" class="login-btn">
+                  Stephen
+                </a>
+                <small class="text-purple">
+                  <i class="fas fa-wallet"></i> : 100,000 MMK
+                </small>
+              </div>
+            </div>
+            <!-- after login -->
+          </div>
+          <!-- nav-links -->
+          <div class="nav-links">
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-home d-block me-2"></i>
+                <p class="py-0">ပင်မ</p>
+              </div>
+            </a>
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-wallet d-block me-2"></i>
+                <p class="py-0">ပိုက်ဆံအိတ်</p>
+              </div>
+            </a>
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-gift d-block me-2"></i>
+                <p class="py-0">ပရိုမိုးရှင်း</p>
+              </div>
+            </a>
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-home d-block me-2"></i>
+                <p class="py-0">ဝန်ဆောင်မှုဖုန်း</p>
+              </div>
+            </a>
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-list d-block me-2"></i>
+                <p class="py-0">ရွေးချယ်ရန်</p>
+              </div>
+            </a>
+            <a href="" class="link shadow">
+              <div class="d-flex">
+                <i class="fas fa-right-from-bracket d-block me-2"></i>
+                <p class="py-0">အကောင့်ထွက်ရန်</p>
+              </div>
+            </a>
+          </div>
+          <!-- nav-links -->
+        </div>
+        <!-- offcanvas end -->
+
+        <!-- navbar section -->
+
+        <!-- content -->
+        <div class="container-fluid py-5 mt-5">
+          <!-- wallet -->
+          <div class="d-flex flex-column justify-content-center align-items-center w-100 my-3 wallet_amount_card">
+            <div>
+              <h1>12800.00 <sub><small>balance(ks)</small></sub></h1>
+            </div>
+          </div>
+          <!-- wallet -->
+          <!-- 2D Numbers start -->
+          <div class="container mb-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>01</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">10
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>02</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">50
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod" data-bs-toggle="modal" data-bs-target="#playtwod">
+                <h2>03</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100">60
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod" data-bs-toggle="modal" data-bs-target="#playtwod">
+                <h2>04</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">80
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod" data-bs-toggle="modal" data-bs-target="#playtwod">
+                <h2>05</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod" data-bs-toggle="modal" data-bs-target="#playtwod">
+                <h2>06</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod" data-bs-toggle="modal" data-bs-target="#playtwod">
+                <h2>07</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>08</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>09</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>10</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>11</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>12</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>13</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>14</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>15</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>16</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>17</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>18</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>19</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>20</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>21</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>22</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>23</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>24</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>25</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>26</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>27</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>28</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>29</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">90
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>30</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>31</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>32</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>33</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>34</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>35</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>36</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>37</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>38</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>39</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>40</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>41</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>42</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>43</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>44</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>45</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>46</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>47</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>48</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>49</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>50</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>51</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>52</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>53</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>54</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>55</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>56</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>57</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>58</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>59</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>60</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>61</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>62</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>63</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>64</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>65</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>66</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>67</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>68</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>69</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>70</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>71</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>72</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>73</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>74</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>75</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>76</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>77</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>78</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>79</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>80</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>81</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>82</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>83</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>84</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>85</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>86</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>87</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>88</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>89</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>90</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>91</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>92</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>93</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>94</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>95</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>96</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>97</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>98</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <button type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card rounded-3" data-bs-toggle="modal"
+                data-bs-target="#playtwod">
+                <h2>99</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">100
+                  </div>
+                </div>
+              </button>
+              <div type="button" class="col-lg-2 text-center p-3 m-lg-2 number_card">
+                <h2>End</h2>
+                <div class="progress">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2D Numbers end -->
+          <!-- Modal -->
+          <div class="modal fade" id="playtwod">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="exampleModalLongTitle">ထိုးမည့်အချိန် (section) ကိုရွေးပါ</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="playTime">
+                    <a href="" class="btn btn-purple w-100">12:00 AM</a>
+                  </div>
+                  <div class="playTime">
+                    <a href="" class="btn btn-purple w-100">04:00 PM</a>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-purple bg-purple text-white w-100">ထိုးမည်</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+
+
+
+        <!-- footer -->
+        <footer id="footer">
+          <div class="row">
+            <div class="col-lg-6 col-md-4 offset-lg-3 offset-md-4 col-12 footer-border-purple py-3 footer-border">
+              <div class="d-flex justify-content-around footer">
+                <a href="./index.html" class="text-decoration-none d-block footer-link active">
+                  <i class="fas fa-home"></i>
+                </a>
+                <a href="./wallet.html" class="text-decoration-none d-block footer-link">
+                  <i class="fas fa-wallet"></i>
+                </a>
+                <a href="" class="text-decoration-none d-block" id="registerBtn">
+                  <i class="fas fa-user-plus"></i>
+                </a>
+                <a href="" class="text-decoration-none d-block footer-link">
+                  <i class="fas fa-gift"></i>
+                </a>
+                <a href="" class="text-decoration-none d-block footer-link">
+                  <i class="fas fa-phone-volume"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer -->
+      </div>
+    </div>
+  </div>
+  <!-- main content -->
+
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JmOzco_KT3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+  <!-- Preloader -->
+
+  <script src="../assets/js/jquery.js"></script>
+  <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/popper.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+    (function () {
+      const fetchData = () => {
+        const url = 'https://api.thaistock2d.com/live';
+
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            const updatedTime = new Date(data.live.time);
+            const day = updatedTime.getDate().toString().padStart(2, '0');
+            const month = (updatedTime.getMonth() + 1).toString().padStart(2, '0');
+            const year = updatedTime.getFullYear();
+            let hours = updatedTime.getHours();
+            const minutes = updatedTime.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            const updatedTimeFormat = `${day}-${month}-${year} ${hours}:${minutes.toString().padStart(2, '0')}:${updatedTime.getSeconds().toString().padStart(2, '0')}${ampm}`;
+
+            $("#live_2d").text(data.live.twod);
+            $("#live_updated_time").text(updatedTimeFormat);
+
+            let newHTML = '';
+            data.result.forEach(r => {
+              newHTML += `
+                                  <div class="digit-card mb-1 rounded-4 mb-2"> 
+                                    <h5 class="text-center">${r.open_time}</h5>
+                                    <div class="multi-text">                
+                                      <div class="">
+                                        <p>Set</p>
+                                        <p>${r.set}</p>
+                                      </div>
+                                      <div class="">
+                                        <p>Value</p>
+                                        <p>${r.value}</p>
+                                      </div>
+                                      <div class="">
+                                        <p>2D</p>
+                                        <p>${r.twod}</p>
+                                      </div>
+                                    </div>             
+                                </div>
+                              `;
+            });
+            $('#result').html(newHTML);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      };
+
+      setInterval(fetchData, 1000);
+    })();
+
+
+  </script>
+</body>
+
+</html>
