@@ -107,6 +107,31 @@
     transition-delay: .6s;
     overflow: scroll;
 }
+@media only screen and (max-width:1200px){
+    .ease-left-in{
+        left: 300px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .ease-left-in{
+        left: 260px;
+    }
+}
+@media only screen and (max-width:992px){
+    .ease-left-in{
+        left: 200px;
+    }
+}
+@media only screen and (max-width:912px){
+    .ease-left-in{
+        left: 230px;
+    }
+}
+@media only screen and (max-width:767px){
+    .ease-left-in{
+        left: 0;
+    }
+}
 
 .ease-left-in a {
     padding: 10px 15px;
